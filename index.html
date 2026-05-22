@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Hours</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=DM+Mono:wght@300;400;500&family=Outfit:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+</head>
+
+<body>
+
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- MOBILE NAV -->
+  <div class="mobile-nav" id="mobileNav">
+    <button class="mobile-nav-close" onclick="closeMobileNav()">✕</button>
+    <a href="#home" onclick="closeMobileNav()">Home</a>
+    <a href="#about" onclick="closeMobileNav()">About</a>
+    <a href="#skills" onclick="closeMobileNav()">Skills</a>
+    <a href="#projects" onclick="closeMobileNav()">Projects</a>
+    <a href="#contact" onclick="closeMobileNav()">Contact</a>
+  </div>
+
+  <div class="wrapper">
+
+    <!-- NAV -->
+    <nav id="mainNav">
+      <div class="logo">The <em>Hours Portfolio</em></div>
+      <ul class="nav-links">
+        <li><a href="#home" class="nav-link active" data-s="home">Home</a></li>
+        <li><a href="#about" class="nav-link" data-s="about">About</a></li>
+        <li><a href="#skills" class="nav-link" data-s="skills">Skills</a></li>
+        <li><a href="#projects" class="nav-link" data-s="projects">Projects</a></li>
+      </ul>
+      <a href="#contact" class="nav-cta">Contact</a>
+      <button class="mobile-menu-btn" onclick="openMobileNav()" aria-label="Menu">
+        <span class="menu-text">MENU</span>
+        <span class="menu-icon">☰</span>
+      </button>
+    </nav>
+
+    <!-- HERO -->
+    <section id="home">
+      <div class="hero-bg"></div>
+      <div class="hero-line"></div>
+      <div class="hero-content">
+        <div class="hero-eyebrow">Backend Developer</div>
+        <h1 class="hero-title">
+          Dark Elegance,<br>
+          <strong>Golden Vision</strong>
+        </h1>
+        <p class="hero-desc">
+          I'm <strong>Hour</strong> — a passionate backend developer constantly sharpening my skills and exploring new
+          technologies to build powerful, scalable systems.
+        </p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-gold">Connect With Me</a>
+          <a href="#projects" class="btn btn-ghost">View My Work</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-num">7</span>
+            <span class="stat-label">Projects</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">19+</span>
+            <span class="stat-label">Technologies</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">∞</span>
+            <span class="stat-label">Ambition</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <!-- Code Preview -->
+        <div class="code-preview">
+          <div class="code-header">
+            <span class="code-dot red"></span>
+            <span class="code-dot yellow"></span>
+            <span class="code-dot green"></span>
+            <span class="code-title">developer.php</span>
+          </div>
+          <div class="code-body">
+            <pre><code><span class="code-keyword">&lt;?php</span>
+<span class="code-class">class</span> <span class="code-name">BackendDeveloper</span> {
+  <span class="code-keyword">private</span> <span class="code-var">$name</span> = <span class="code-string">'Hour'</span>;
+  <span class="code-keyword">private</span> <span class="code-var">$skills</span> = [<span class="code-string">'Laravel'</span>, <span class="code-string">'Vue.js'</span>, <span class="code-string">'PostgreSQL'</span>];
+  
+  <span class="code-keyword">public function</span> <span class="code-method">build</span>() {
+    <span class="code-keyword">return</span> <span class="code-string">'✨ clean code'</span>;
+  }
+}</code></pre>
+          </div>
+        </div>
+
+        <!-- Tech Tags -->
+        <div class="tech-tags">
+          <span class="tag">Laravel</span>
+          <span class="tag">PostgreSQL</span>
+          <span class="tag">REST API</span>
+          <span class="tag">Git</span>
+          <!-- <span class="tag">Game</span> -->
+        </div>
+
+        <!-- Focus Card -->
+        <div class="focus-card">
+          <div class="focus-icon">🎯</div>
+          <div class="focus-content">
+            <span class="focus-label">Currently Focusing</span>
+            <span class="focus-value">System Design & Architecture</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="fade-up">
+      <div class="section-header">
+        <div>
+          <div class="section-label">Background</div>
+          <h2 class="section-title-lg">About <em>Me</em></h2>
+        </div>
+      </div>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>I'm a <strong>fresh backend developer</strong> on a focused journey to master modern web technologies. My
+            interest lies in building clean, performant server-side systems that power real-world applications.</p>
+          <p>Currently <strong>learning</strong> and <strong>continuously improving</strong> my skills as a backend
+            developer, I approach every project as an opportunity to grow and gain hands-on experience. I believe in
+            writing code that is not only functional, but also clean, efficient, and maintainable.</p>
+          <p>My philosophy: <strong>build with purpose, iterate with intent, and always ship something better than
+              yesterday.</strong></p>
+          <div style="margin-top:2rem;">
+            <a href="#contact" class="btn btn-gold">Let's Work Together</a>
+          </div>
+        </div>
+        <div class="about-card">
+          <div class="about-card-title">Journey So Far</div>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <div class="timeline-year">Present</div>
+                <div class="timeline-title">Backend Development Internship</div>
+                <div class="timeline-sub">Building APIs and improving backend skills with Laravel & PostgreSQL</div>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <div class="timeline-year">2023 – 2026</div>
+                <div class="timeline-title">Bachelor's Degree of Software Engineering</div>
+                <div class="timeline-sub">Beltei International University</div>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <div class="timeline-year">2023</div>
+                <div class="timeline-title">First Lines of Code</div>
+                <div class="timeline-sub">C++, HTML, CSS, JavaScript fundamentals</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="fade-up">
+      <div class="section-header">
+        <div>
+          <div class="section-label">Technical skills</div>
+          <h2 class="section-title-lg">Code & <em>Craft</em></h2>
+        </div>
+      </div>
+      <div class="skills-container" id="skillsGrid"></div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="fade-up">
+      <div class="section-header">
+        <div>
+          <div class="section-label">Portfolio</div>
+          <h2 class="section-title-lg">Projects <em>Experience</em></h2>
+        </div>
+      </div>
+      <div class="projects-grid" id="projectsGrid"></div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="fade-up">
+      <div class="section-header">
+        <div>
+          <div class="section-label">Get In Touch</div>
+          <h2 class="section-title-lg">Send a <em>Vibe</em></h2>
+        </div>
+      </div>
+      <div class="contact-layout">
+        <div class="contact-info">
+          <p>I'm always open to interesting projects, collaborations, or just a good conversation about tech. Whether
+            you have an opportunity or just want to connect — reach out.</p>
+          <div class="contact-links">
+            <a href="mailto:mornlyhour508@gmail.com?subject=Contact%20from%20Portfolio&body=Hello%20Hour,"
+              class="contact-link">
+
+              <span class="contact-link-icon">✉</span>
+              <span>Contact Me</span>
+
+            </a>
+            <a href="https://github.com/Iboyyyyyyy" class="contact-link" target="_blank">
+
+              <span class="contact-link-icon">
+                <i class="fab fa-github"></i>
+              </span>
+
+              <span>github.com</span>
+            </a>
+
+            <a href="https://www.linkedin.com/in/morn-lyhour-461b44371/" class="contact-link" target="_blank">
+
+              <span class="contact-link-icon">
+                <i class="fab fa-linkedin-in"></i>
+              </span>
+
+              <span>linkedin.com</span>
+            </a>
+          </div>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <div class="gold-bg"></div>
+          <div class="gold-accent"></div>
+
+          <div class="form-row">
+            <div class="form-field">
+              <label class="form-label">Full Name</label>
+              <input class="form-input" type="text" placeholder="Your name" required>
+            </div>
+            <div class="form-field">
+              <label class="form-label">Email</label>
+              <input class="form-input" type="email" placeholder="name@example.com" required>
+            </div>
+          </div>
+          <div class="form-field">
+            <label class="form-label">Message</label>
+            <textarea class="form-textarea" placeholder="Tell me about your project or idea..."></textarea>
+          </div>
+          <button type="submit" class="form-submit">Send Message →</button>
+          <p class="form-feedback" id="formFeedback"></p>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-logo">The <em>Hours Portfolio</em></div>
+
+      <div class="footer-social">
+        <a href="https://www.facebook.com/share/1D2jDDBuxt/?mibextid=wwXIfr" target="_blank" class="social-link"
+          aria-label="Facebook">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://t.me/mornlyhour" target="_blank" class="social-link" aria-label="Telegram">
+          <i class="fab fa-telegram-plane"></i>
+        </a>
+        <a href="https://www.tiktok.com/@2ez4kanji?_r=1&_t=ZS-96XyhtzosfY" target="_blank" class="social-link"
+          aria-label="Instagram">
+          <i class="fab fa-tiktok"></i>
+        </a>
+      </div>
+
+      <p class="footer-copy">© 1629 — All rights reserved</p>
+      <p class="footer-mark">Crafted with passion ⚜</p>
+    </footer>
+
+  </div>
+
+</body>
+<div class="audio-player" id="audioPlayer">
+  <button class="audio-btn" id="audioBtn" onclick="toggleAudio()" aria-label="Toggle music">
+    <span class="audio-icon">🎵</span>
+    <span class="audio-text">Play Music</span>
+  </button>
+  <div class="audio-controls">
+    <span class="vol-icon">🔊</span>
+    <input type="range" id="volumeSlider" min="0" max="100" value="30" aria-label="Volume">
+  </div>
+</div>
+
+<audio id="bgMusic" loop preload="auto">
+  <source src="music/Starboy.mp3" type="audio/mpeg">
+</audio>
+
+<script src="script.js"></script>
+
+</html>
